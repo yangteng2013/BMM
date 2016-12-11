@@ -109,7 +109,7 @@ public class BMM2MConfirmation extends ActivityBase {
                             apiManager.removeListener(this);
                             String message = data.getResponseDataObj().getString("MESSAGE");
                             payee.setText(payee.getText().toString().replaceAll("#payee",message.substring(message.indexOf(":")+2).split(" ")[0]));
-                            mcode.setText(getResources().getString(R.string.merchant_code)+": "+data.getResponseDataObj().getString("MERCHANTCODE") );
+                            mcode.setText(getResources().getString(R.string.merchant_code)+" : "+data.getResponseDataObj().getString("MERCHANTCODE") );
                             mmobile.setText(getResources().getString(R.string.mobile)+": "+mobile);
                             hideLoader();
                         }else{
