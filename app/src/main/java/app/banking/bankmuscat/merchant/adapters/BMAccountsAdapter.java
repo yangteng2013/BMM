@@ -8,29 +8,58 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
+import java.util.Iterator;
 import java.util.List;
 
 import app.banking.bankmuscat.R;
+import app.banking.bankmuscat.merchant.entity.instrument.BankAccount;
 import app.banking.bankmuscat.merchant.entity.instrument.Notification;
 
 
 public class BMAccountsAdapter extends RecyclerView.Adapter  {
 
 	private Context context;
-	private List<String> notificationlist;
-
-	public BMAccountsAdapter(Context con, List<String> notificationlist) {
+	private List<BankAccount> accountslist;
+	static int selectedposition=0;
+	public BMAccountsAdapter(Context con, List<BankAccount> accountslist) {
 		this.context = con;
-		this.notificationlist = notificationlist;
+		this.accountslist = accountslist;
 
 	}
 
 	@Override
-	public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+	public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
+
 
 		Myholder1 viewHolder = (Myholder1)holder;
+		viewHolder.button.setTag(new Integer(position));
+
+		viewHolder.button.setImageResource(R.drawable.add3);
+		if(accountslist.get(position).isSelected) {
+			System.out.println("FOUND And Setting!!!!"+position);
+			viewHolder.button.setImageResource(R.drawable.add2);
+		}
+		else {
+			viewHolder.button.setImageResource(R.drawable.add3);
+		}
+		viewHolder.button.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Iterator<BankAccount> acctItr =accountslist.iterator();
+				while(acctItr.hasNext()) {
+					BankAccount temp =acctItr.next();
+					temp.isSelected=false;
+				}
+				BankAccount account= accountslist.get(position);
+				account.isSelected=true;
+				accountslist.set(position,account);
+				notifyItemChanged(position);
+				notifyDataSetChanged();
+			}
+		});
 /*		viewHolder.date.setText("gdsgfys");
 		viewHolder.txtname.setText("shvdhss");
 		viewHolder.amount.setText("RO 200");
@@ -56,9 +85,11 @@ public class BMAccountsAdapter extends RecyclerView.Adapter  {
 	public class Myholder1 extends RecyclerView.ViewHolder {
 /*		public TextView date, txtname, txttype, amount,txnId;
 		ImageView image;*/
+		ImageView button;
 
 		public Myholder1(View view) {
 			super(view);
+			button = (ImageView) view.findViewById(R.id.radiobutton);
 /*			date = (TextView) view.findViewById(R.id.txtdate);
 			txtname = (TextView) view.findViewById(R.id.txtname);
 			txttype = (TextView) view.findViewById(R.id.txttype);
@@ -79,7 +110,7 @@ public class BMAccountsAdapter extends RecyclerView.Adapter  {
 
 	@Override
 	public int getItemCount() {
-		return this.notificationlist.size();
+		return this.accountslist.size();
 	}
 	private void setFadeAnimation(View view) {
 		AlphaAnimation anim = new AlphaAnimation(0.0f, 1.0f);

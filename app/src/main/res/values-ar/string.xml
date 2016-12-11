@@ -112,6 +112,8 @@
     <string name="otpheader"> An OTP is sent to your \n mobile number</string>
     <string name="pininfo">Please follow bank muscat Wallet PIN Policy</string>
     <string name="arabic">العربية</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="enter_mobile_num">رقم الهاتف النقال</string>
     <string name="welcomeheader">Welcome to bank muscat wallet</string>
     <string name="loginheader">Login to your Account</string>
     <string name="changemobile">Mobile Number Changed Successfully</string>

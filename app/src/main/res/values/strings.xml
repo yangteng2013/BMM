@@ -28,7 +28,7 @@
     <string name="pinchange_text">Wallet PIN Change</string>
     <string name="notifications_text">Notifications</string>
     <string name="forgot_pin_text">Forgot PIN</string>
-    <string name="Amount">Amount (RO)</string>
+    <string name="amount">Amount (RO)</string>
     <string name="change_pin_title">Change your Wallet PIN</string>
     <string name="mobile">Mobile</string>
     <string name="enteramount">Enter Amount (RO)</string>

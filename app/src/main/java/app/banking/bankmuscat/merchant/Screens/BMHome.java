@@ -494,23 +494,6 @@ ImageView img_profilepic;
 						e.printStackTrace();
 						apiManager.removeListener(this);
 						hideLoader();
-						new AlertDialog.Builder(BMHome.this)
-								.setTitle("Error")
-								.setMessage(ErrorAndPopupCodes.No_Response.getTag())
-								.setPositiveButton("Retry", new DialogInterface.OnClickListener() {
-									public void onClick(DialogInterface dialog, int which) {
-
-										ErrorAction();
-									}
-								})
-								.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-
-									@Override
-									public void onClick(DialogInterface dialog, int which) {
-										Logout();
-									}
-								})
-								.show();
 					}
 				}
 			};

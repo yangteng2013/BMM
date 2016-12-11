@@ -17,11 +17,12 @@ import app.banking.bankmuscat.merchant.adapters.BMAccountsAdapter;
 import app.banking.bankmuscat.merchant.adapters.BMNotificationAdapter;
 import app.banking.bankmuscat.merchant.base.ActivityBase;
 import app.banking.bankmuscat.merchant.components.widgets.RobotoButton;
+import app.banking.bankmuscat.merchant.entity.instrument.BankAccount;
 
 public class BMmove2bank extends ActivityBase {
 
     private RecyclerView accounts;
-    private ArrayList<String> accts = new ArrayList<String>();
+    private ArrayList<BankAccount> accts = new ArrayList<BankAccount>();
     private BMAccountsAdapter listAdapter;
     private RobotoButton next,cancel;
     @Override
@@ -40,12 +41,12 @@ public class BMmove2bank extends ActivityBase {
             }
         });
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-        accts.add("dsjd");
-        accts.add("dsjd");
-        accts.add("dsjd");
-        accts.add("dsjd");
-        accts.add("dsjd");
-        accts.add("dsjd");
+        accts.add(new BankAccount("dsjd"));
+        accts.add(new BankAccount("dsjd"));
+        accts.add(new BankAccount("dsjd"));
+        accts.add(new BankAccount("dsjd"));
+        accts.add(new BankAccount("dsjd"));
+        accts.add(new BankAccount("dsjd"));
         next= (RobotoButton) findViewById(R.id.mob_buttonnext);
         next.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -24,12 +24,13 @@
             android:layout_alignParentLeft="true"
             android:textSize="20sp"/>
 
-        <RadioButton
+        <ImageView
             android:id="@+id/radiobutton"
-            android:textSize="10sp"
+            android:src="@drawable/add3"
+            android:scaleType="fitXY"
             android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
 
         </RelativeLayout>
 
