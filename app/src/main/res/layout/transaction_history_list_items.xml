@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/t_imageView1"
+        android:layout_width="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:layout_weight="0.3"
+        android:src="@drawable/creditcard01" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:id="@+id/t_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+                app:typeface="roboto_bold"
+                android:textSize="16sp"
+                android:text="Ryan’s Coffee Shop" 
+                android:textColor="@color/black"/>
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium"
+            android:textSize="13sp"
+            android:text="Barcalays Credit 0504"
+            android:textColor="@color/black"/>
+        
+	</LinearLayout>
+	
+   <!--   <Button
+        android:id="@+id/T_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.3"
+        android:background="@drawable/transaction_button"
+        android:text="450" />-->
+        
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/transaction_button"
+            android:layout_weight="0.39"
+            android:orientation="vertical" >
+
+            <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+                android:id="@+id/imageView1_t"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="450"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            
+            </LinearLayout>
+    
+    </LinearLayout>
+
+    
+
+</LinearLayout>

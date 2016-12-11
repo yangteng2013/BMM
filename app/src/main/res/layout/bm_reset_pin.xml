@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/otp_footer_rel_layout"
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical">
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:gravity="center">
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:id="@+id/txtpinheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textColor="@color/AppthemeTextColor"
+            android:text="@string/setyournewpin"
+            android:textSize="18sp" />
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:id="@+id/txtenterpinheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtpinheader"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:textColor="@color/AppthemeTextColor"
+            android:text="@string/newwalletpin"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/lytpinbuttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtenterpinheader"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+                android:id="@+id/edtpin1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:textColor="@color/AppthemeTextColor"
+                android:background="@drawable/bottomborder"
+                android:gravity="center"
+                android:text="" />
+
+            <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+                android:id="@+id/edtpin2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/AppthemeTextColor"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:singleLine="true"
+
+                android:layout_toRightOf="@id/edtpin1"
+                android:gravity="center"
+                android:background="@drawable/bottomborder"
+                android:text="" />
+
+            <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+                android:id="@+id/edtpin3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:cursorVisible="true"
+                android:textColor="@color/AppthemeTextColor"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/edtpin2"
+                android:background="@drawable/bottomborder"
+                android:gravity="center"
+                android:text="" />
+
+            <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+                android:id="@+id/edtpin4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:cursorVisible="true"
+                android:textColor="@color/AppthemeTextColor"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/edtpin3"
+                android:gravity="center"
+                android:background="@drawable/bottomborder"
+                android:text="" />
+
+           <!-- <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+                android:id="@+id/edtpin5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:cursorVisible="true"
+                android:textColor="@color/AppthemeTextColor"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/edtpin4"
+                android:gravity="center"
+                android:background="@drawable/bottomborder"
+                android:text="" />-->
+
+        </RelativeLayout>
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:id="@+id/txtreenterpinheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lytpinbuttons"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:textColor="@color/AppthemeTextColor"
+            android:text="@string/confirmnewwalletpin"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/lytpinbuttonsre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtreenterpinheader"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+                android:id="@+id/edtrepin1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="0dp"
+                android:cursorVisible="true"
+                android:textColor="@color/AppthemeTextColor"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:background="@drawable/bottomborder"
+                android:gravity="center"
+                android:text="" />
+
+            <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+                android:id="@+id/edtrepin2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:cursorVisible="true"
+                android:textColor="@color/AppthemeTextColor"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/edtrepin1"
+                android:gravity="center"
+                android:background="@drawable/bottomborder"
+                android:text="" />
+
+            <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+                android:id="@+id/edtrepin3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/AppthemeTextColor"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/edtrepin2"
+                android:background="@drawable/bottomborder"
+                android:gravity="center"
+                android:text="" />
+
+            <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+                android:id="@+id/edtrepin4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/AppthemeTextColor"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/edtrepin3"
+                android:gravity="center"
+                android:background="@drawable/bottomborder"
+                android:text="" />
+
+            <!--<app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+                android:id="@+id/edtrepin5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/AppthemeTextColor"
+                android:inputType="numberPassword"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:layout_toRightOf="@id/edtrepin4"
+                android:gravity="center"
+                android:background="@drawable/bottomborder"
+                android:text="" />-->
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/mob_pin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/lytpinbuttonsre"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/txtpindisclaimer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:hint="@string/pininfo"
+                android:inputType="number"
+                android:editable="false"
+                android:cursorVisible="false"
+
+                android:paddingLeft="0dp"
+                />
+
+
+            <ImageView
+                android:id="@+id/mobbtninfo"
+                android:layout_width="20dp"
+                android:layout_toRightOf="@+id/txtpindisclaimer"
+                android:layout_height="20dp"
+                android:padding="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:background="@drawable/infoico" />
+            <!--
+                        <app.banking.bankmuscat.wallet.components.widgets.RobotoTextView
+                            android:id="@+id/mobtxtsetpinfooter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#00000000"
+
+                            android:textColor="@color/AppthemeTextColor"
+                            android:gravity="center"
+                            android:hint="Do not use repeated or sequential numbers"
+                            android:inputType="number"
+
+                            android:paddingLeft="10dp"
+                             />-->
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/otp_footer_rel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoButton
+            android:id="@+id/mob_buttoncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_change_selector"
+            android:text="@string/cancel_button_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:typeface="roboto_condensed_bold" />
+
+        <!--         <ImageView -->
+        <!--             android:id="@+id/imageView1" -->
+        <!--             android:layout_width="1dp" -->
+        <!--             android:layout_height="wrap_content" -->
+        <!--             android:contentDescription="@string/content_description_divider" -->
+        <!--             android:src="@drawable/divider" /> -->
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoButton
+            android:id="@+id/mob_buttonconfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0.1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_change_selector"
+            android:text="@string/confirm_button_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:typeface="roboto_condensed_bold" />
+    </LinearLayout>
+
+</RelativeLayout>

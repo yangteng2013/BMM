@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitEnd"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/otp_footer_rel_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="25dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/mob_header_rel_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+
+        android:orientation="horizontal" >
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+android:textStyle="bold"
+            android:textColor="@color/AppthemeTextColor"
+            android:layout_centerHorizontal="true"
+            android:text="@string/securityquestion" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mob_page_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/header"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+
+        android:orientation="horizontal" >
+
+
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:id="@+id/mobtxtquestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/AppthemeTextColor"
+            android:text="Given Question?" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/mob_mobilelayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mob_page_bg"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/customborder"
+        android:orientation="horizontal" >
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+            android:id="@+id/edtsecret"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/AppthemeTextColor"
+            android:background="#00000000"
+            android:ems="20"
+            android:gravity="left|center_vertical"
+            android:hint="@string/secretanswer"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:maxLength="20"
+            android:paddingLeft="10dp"
+             />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/mob_mobilelayout"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_centerHorizontal="true" >
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+android:textSize="10sp"
+            android:textColor="@color/AppthemeTextColor"
+            android:text="@string/donotshare" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/otp_footer_rel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoButton
+            android:id="@+id/mob_buttoncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_change_selector"
+            android:text="@string/cancel_button_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:typeface="roboto_condensed_bold" />
+
+        <!--         <ImageView -->
+        <!--             android:id="@+id/imageView1" -->
+        <!--             android:layout_width="1dp" -->
+        <!--             android:layout_height="wrap_content" -->
+        <!--             android:contentDescription="@string/content_description_divider" -->
+        <!--             android:src="@drawable/divider" /> -->
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoButton
+            android:id="@+id/mob_buttonnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="0.1dp"
+            android:background="@drawable/button_change_selector"
+            android:text="@string/next_button_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:typeface="roboto_condensed_bold" />
+    </LinearLayout>
+
+</RelativeLayout>

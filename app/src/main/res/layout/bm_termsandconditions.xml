@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <!--<RelativeLayout
+        android:id="@+id/terms_header_rel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_size"
+        android:background="#d81d37" >
+
+        <app.banking.bankmuscat.wallet.components.widgets.RobotoTextView
+            android:id="@+id/terms_heading_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/terms_heading"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:typeface="roboto_medium" />
+
+        <ImageView
+            android:id="@+id/termsbtnBack"
+            android:layout_width="@dimen/back_button_size"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/content_description_back"
+            android:cropToPadding="true"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/white_arrow" />
+    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/terms_page_scroll_rel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+
+        android:background="#ffffff" >
+    </RelativeLayout>
+
+    <!--
+      <RelativeLayout
+        android:id="@+id/terms_text_parentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/terms_text_rel_layout">
+    
+    
+      <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+      <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent" >
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/terms_footer_rel_layout"
+
+         >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="false" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/terms_page_scroll_rel_layout"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal" >
+
+                        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:text="Terms of Service"
+                            android:textSize="17.33dp"
+                            app:typeface="roboto_light" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="false"
+                    android:text="1. Acceptance\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nullam mattis lobortis sollicitudin. Curabitur pretium
+vitae sem vel luctus. Cras venenatis luctus euismod.
+Praesent condimentum urna vitae fringilla tristique.
+Quisque posuere a sapien at fermentum. Suspendisse
+lectus ipsum, pellentesque mattis dui vel, scelerisque
+ullamcorper magna.
+Duis commodo, lorem eget vehicula faucibus, dolor risus
+lacinia massa, id aliquam ipsum neque sed nulla. Integer
+tincidunt mauris ut ante porttitor dignissim.
+Duis commodo, lorem eget vehicula faucibus, dolor risus
+lacinia massa, id aliquam ipsum neque sed nulla. Integer
+tincidunt mauris ut ante porttitor.\n\n
+2. Under Advicement\n\nDuis id quam ullamcorper, porttitor orci eu, blandit erat.
+Integer elementum justo et odio molestie ultrices. In erat
+est, dapibus vel ultricies nec, venenatis lacus. Vivamus
+justo tellus, facilisis et ultricies sit amet, blandit vel arcu.
+Mauris sit amet felis tellus. Vestibulum augue mi, feugiat
+ac porttitor id, dignissim vel arcu. Mauris luctus est eu 
+Integer elementum justo et odio molestie ultrices. In erat
+est, dapibus vel ultricies nec, venenatis lacus. Vivamus
+justo tellus, facilisis et ultricies sit amet, blandit vel arcu.
+Mauris sit amet felis tellus. Vestibulum augue mi, feugiat. 
+Duis commodo, lorem eget vehicula faucibus, dolor risus
+lacinia massa, id aliquam ipsum neque sed nulla. Integer
+tincidunt mauris ut ante porttitor dignissim.Mauris
+ sit amet felis tellus. Vestibulum augue mi, feugiat
+ac porttitor id, dignissim vel arcu. Mauris luctus est eu 
+Integer elementum justo et odio molestie ultrices. In erat
+est, dapibus vel ultricies nec, venenatis lacus. Vivamus
+justo tellus, facilisis et ultricies sit amet, blandit vel arcu.
+Mauris sit amet felis tellus. Vestibulum augue mi, feugiat. 
+Duis commodo, lorem eget vehicula faucibus, dolor risus
+lacinia massa, id aliquam ipsum neque sed nulla. Integer
+tincidunt mauris ut ante porttitor dignissim.Integer 
+elementum justo et odio molestie ultrices. In erat
+est, dapibus vel ultricies nec, venenatis lacus. Vivamus
+justo tellus, facilisis et ultricies sit amet, blandit vel arcu.
+Mauris sit amet felis tellus. Vestibulum augue mi, feugiat
+ac porttitor id, dignissim vel arcu. Mauris luctus est eu 
+Integer elementum justo et odio molestie ultrices. In erat
+est, dapibus vel ultricies nec, venenatis lacus. Vivamus
+justo tellus, facilisis et ultricies sit amet, blandit vel arcu.
+Mauris sit amet felis tellus. Vestibulum augue mi, feugiat. 
+Duis commodo, lorem eget vehicula faucibus, dolor risus
+lacinia massa, id aliquam ipsum neque sed nulla. Integer
+tincidunt mauris ut ante porttitor dignissim.Mauris
+ sit amet felis tellus. Vestibulum augue mi, feugiat
+ac porttitor id, dignissim vel arcu. Mauris luctus est eu 
+Integer elementum justo et odio molestie ultrices. In erat
+est, dapibus vel ultricies nec, venenatis lacus. Vivamus
+justo tellus, facilisis et ultricies sit amet, blandit vel arcu.
+Mauris sit amet felis tellus. Vestibulum augue mi, feugiat. 
+Duis commodo, lorem eget vehicula faucibus, dolor risus
+lacinia massa, id aliquam ipsum neque sed nulla. Integer
+tincidunt mauris ut ante porttitor dignissim."
+                    android:textSize="12dp"
+                    app:typeface="roboto_medium" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/terms_footer_rel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoButton
+            android:id="@+id/terms_buttonok"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_change_selector"
+            android:text="@string/ok_button_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:typeface="roboto_condensed_bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

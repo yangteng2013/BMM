@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Header and Footer Size for all Layouts -->
+    <dimen name="header_size">75dp</dimen>
+    <dimen name="footer_size">40dp</dimen>
+    <dimen name="back_button_size">40dp</dimen>
+    <dimen name="menu_button_size">40dp</dimen>
+    <dimen name="home_text_size">26sp</dimen>
+    <dimen name="card_number_text_size">18sp</dimen>
+
+    <!-- CVV -->
+    <!-- CVV -->
+
+    <!-- AddToWallet Top Margin -->
+
+    <!-- Add To Wallet Card Type height -->
+    <dimen name="card_type_height">60dp</dimen>
+
+    <!-- Add To Wallet Card Type width -->
+    <dimen name="card_type_width">80dp</dimen>
+    <!-- Wallet Ticket text size -->
+    <!-- Wallet Ticket text size -->
+
+    <!-- Gift Card -->
+    <dimen name="cardsidemargin">50dp</dimen>
+    <dimen name="cardpaymentmargin">5dp</dimen>
+    <!-- Coupon Card -->
+
+    <!-- Slide Menu Width -->
+    <dimen name="slidemenuwidth">500dp</dimen>
+
+    <!-- Confimation page -->
+
+    <!-- Market -->
+    <!-- Help -->
+
+</resources>

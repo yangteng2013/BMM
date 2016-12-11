@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center_vertical">
+
+    <!--<LinearLayout
+        android:id="@+id/tabsold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/mob_header_rel_layout"
+        android:orientation="horizontal"
+
+        android:visibility="gone">
+
+        <com.comviva.wallet.components.widgets.RobotoButton
+            android:id="@+id/tab_savedcards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/AppthemeTextColor"
+            android:text="@string/savedcards"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            app:typeface="roboto_condensed_bold" />
+
+
+        <com.comviva.wallet.components.widgets.RobotoButton
+            android:id="@+id/tab_newcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0.1dp"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:text="@string/newcard"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:typeface="roboto_condensed_bold" />
+
+    </LinearLayout>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+
+        android:orientation="vertical">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+           <!-- <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_color"
+
+                app:tabMode="scrollable"
+                app:tabGravity="fill"
+
+                app:tabIndicatorColor="@color/grey_color"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextColor="@color/grey" />-->
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_color"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/white"/>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+      <!--  <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="25dp"
+            android:paddingLeft="25dp"
+            android:gravity="center"
+            android:orientation="vertical">-->
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+   <!--</LinearLayout>
+
+    </ScrollView>-->
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>

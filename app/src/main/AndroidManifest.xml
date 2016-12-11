@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.banking.bankmuscat">
+
+    <meta-data
+        android:name="com.facebook.sdk.ApplicationId"
+        android:value="@string/facebook_app_id" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi.direct"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    WRITE_EXTERNAL_STORAGE
+    <uses-feature
+        android:name="android.hardware.nfc.hce"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.NFC_TRANSACTION" />
+    <uses-permission android:name="android.permission.SMARTCARD" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+    <uses-permission android:name="com.mastercard.wallet.permission.REGISTER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="com.comviva.androidgpstrackingactivity.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <!--
+    <permission android:name="com.mahindracomviva.rse.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+	<uses-permission android:name="com.mastercard.rse.permission.C2D_MESSAGE" />
+    -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".merchant.base.BMApplication"
+        android:allowBackup="true"
+        android:enabled="true"
+        android:icon="@drawable/bmicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/TabTheme">
+
+        <!--
+        Beacon Service started
+        <service
+            android:name="com.estimote.sdk.service.BeaconService"
+            android:exported="true" />
+        -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".merchant.Screens.BMSplash"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".merchant.Screens.BMLogin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+            <category android:name="android.intent.category.BROWSABLE" />
+        </intent-filter></activity>
+        <activity
+            android:name=".merchant.Screens.BMRegisterUser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMSetPin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMSubmitOTP"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMSecurityQuestion"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMHome"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+        </activity>
+        <activity
+            android:name=".merchant.Screens.BMBalance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMLanguage"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMChangePin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMForgotPin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMChangesMade"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMEnterEmail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMEnterMobile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMEnterSecret"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMEnterPin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMDemo"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMLoadSVNAmount"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMLoadSVNDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMLoadSVNCards"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMLoadSVNEnterCvv"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMLoadSVNResult"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMLoadSVNNewCard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMTermsAndConditions"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".merchant.Screens.BMResetPin"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMLoadImage"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMTransferToBankList"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMTransferToBankAmount"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMTransferToBankDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMTransferToBankResult"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMEnterName"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMEnterDOB"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMSendMoney"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMSendMoneyDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMSendMoneyResult"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMSendMoneyUnregistered"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMQRScan"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMQRScanDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMQRScanResult"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMNotifications"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMPendingTransactions"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMTransactions"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMDateSelector"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMBrowser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.Exit"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMTransactionDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMPendingTransactionList"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMContacts"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMPendingTransactionDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMFavTransactions"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".merchant.Screens.SendFavorite" />
+        <activity
+            android:name=".merchant.Screens.BMSplitBill"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMSplitAdd"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMSplitSummary"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMRequestMoney"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMRequestMoneyDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMNotificationDetail"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".merchant.Screens.BMSplitGroups" />
+        <activity
+            android:name=".merchant.Screens.BMSplitCreateGroup"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMSplitUpdateGroup"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMChipInDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".merchant.Screens.BMChipInDetail" />
+        <activity android:name=".merchant.Screens.BMError" />
+        <activity
+            android:name=".merchant.Screens.BMPayeePendingTransactionDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMChipInList"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMPendingChipinDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".merchant.Screens.BMPendingChipinInput"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity android:name=".merchant.Screens.BMSplitBillResult" />
+        <activity
+            android:name=".merchant.Screens.BMCollectPayment"
+            android:screenOrientation="portrait"
+            android:theme="@style/TabTheme"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+        </activity>
+        <activity
+            android:name=".merchant.Screens.GenerateQRCodeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".merchant.Screens.BMMerchantM2M"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".merchant.Screens.BMM2MConfirmation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+
+        <activity
+            android:name=".merchant.Screens.BMM2Mresult"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+        </activity>
+
+        <activity android:name=".merchant.Screens.BMTransactionHistory" />
+        <activity android:name=".merchant.Screens.BMmove2bank" />
+        <activity android:name=".merchant.Screens.BMAccountsDetail" />
+        <activity android:name=".merchant.Screens.BMAccountsTransferConfirm" />
+        <activity android:name=".merchant.Screens.BMTransferBankresult"></activity>
+    </application>
+
+</manifest>

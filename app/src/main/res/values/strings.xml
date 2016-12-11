@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">bank muscat Merchant - Version Beta</string>
+    <string name="bankmuscat">bank muscat</string>
+    <string name="Notification"> Notifications </string>
+    <string name="social_account">Social Accounts</string>
+    <string name="process">Processing</string>
+    <string name="submitotp">Submit OTP</string>
+    <string name="chooselanguage">Select Language</string>
+    <string name="language">Language</string>
+    <string name="enter_pin">Enter PIN</string>
+    <string name="enter_mobile">Mobile Number</string>
+    <string name="enter_mobile_num">Enter Mobile Number</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="cvv">CVV</string>
+    <string name="name">Name</string>
+
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="menu_content_discription">slide</string>
+    <string name="terms_heading">Terms &amp; Conditions</string>
+    <string name="thank_you">Thank you for using bank muscat Application</string>
+    <string name="enterpin">Enter PIN</string>
+    <string name="resetpin">Reset PIN</string>
+
+    <string name="transaction_header">Transaction History</string>
+    <string name="pinchange_text">Wallet PIN Change</string>
+    <string name="notifications_text">Notifications</string>
+    <string name="forgot_pin_text">Forgot PIN</string>
+    <string name="Amount">Amount (RO)</string>
+    <string name="change_pin_title">Change your Wallet PIN</string>
+    <string name="mobile">Mobile</string>
+    <string name="enteramount">Enter Amount (RO)</string>
+    <string name="general_exception">Something went wrong. Please try Again.</string>
+    <string name="error_requesterror">Network connection Lost Please retry.</string>
+    <string name="error_bodyin">Network connection Lost Please retry.</string>
+    <string name="client_title">ICICI Bank</string>
+
+    <string name="termsandconditions">I Accept to bank muscat Terms &amp; Conditions</string>
+
+    <string name="enteryourwalletpin">Enter Your Wallet PIN</string>
+    <string name="reenterpin">Re-Enter Wallet PIN</string>
+    <string name="existingpin">Old PIN</string>
+    <string name="enternewpin">New PIN</string>
+    <string name="reenternewpin">Re-Enter New Wallet PIN</string>
+    <string name="nidnumber">NID Number</string>
+    <string name="changesmade">Changes has been made</string>
+    <string name="securityquestion">Security Question</string>
+    <string name="secretanswer">Secret Answer</string>
+    <string name="secretanswer_message">Please answer the two security questions and answers</string>
+    <string name="donotshare">Please do not share this answer for security purpose</string>
+    <string name="topbar_security_question">SECURITY QUESTION</string>
+    <string name="thankyou">Thank you for registration</string>
+    <string name="loadmoney">Please load money to start \n using your wallet</string>
+    <string name="existingmobile">Existing Mobile Number</string>
+    <string name="newmobile">Enter New Mobile Number</string>
+    <string name="existingemail">Existing Email ID</string>
+    <string name="email">Email</string>
+    <string name="verify">Verify Email</string>
+    <string name="verified">Verified</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="newemail">Enter New Email ID</string>
+    <string name="facebook_app_id">1205998009480072</string>
+    <string name="debit_cards">Debit Cards</string>
+    <string name="internet_banking">Internet Banking Service</string>
+    <string name="mobile_banking">Mobile Banking Service</string>
+    <string name="description1">Description</string>
+    <string name="loadmoneytitle">Load Money</string>
+    <string name="initiateloadmoney">Initiate Load Money</string>
+    <string name="servicecharge">Service Charge : </string>
+    <string name="ro">RO</string>
+    <string name="amountro">Amount (RO):</string>
+    <string name="reductionro">Total Deduction from Wallet: RO</string>
+    <string name="totalreduction">Total Deduction from Wallet :</string>
+    <string name="savedcards">Saved Cards</string>
+    <string name="newcard">New Card</string>
+    <string name="pendingtransactionstitle">Pending Transactions</string>
+    <string name="nickname">Nick Name</string>
+    <string name="scancard">Scan Card</string>
+    <string name="loadwalletcomplete">Load Wallet Complete</string>
+    <string name="nameoncard">NAME ON CARD</string>
+    <string name="expirydate">EXPIRY DATE</string>
+    <string name="transactionid">Transaction ID : </string>
+    <string name="savecard">Save this card</string>
+    <string name="saveaccount">Save this account</string>
+    <string name="makefav">Make it favorite transaction</string>
+    <string name="answerquestion">Secret Question</string>
+    <string name="setyournewpin">Set your New Wallet PIN</string>
+    <string name="newwalletpin">New Wallet PIN</string>
+    <string name="confirmnewwalletpin">Confirm New Wallet PIN</string>
+    <string name="transfered">Transfered</string>
+    <string name="success">Success</string>
+    <string name="proceeding">Proceeding</string>
+    <string name="forpayment">For Payment</string>
+    <string name="taponqr">Tap On QR To Start Scanning</string>
+    <string name="entermerchantdetails">Enter Merchant Payment Details</string>
+    <string name="merchantcode">Merchant Code</string>
+    <string name="amountinro">Amount(RO)</string>
+    <string name="emaildisclaimer">This service will change your registered e-mail ID for the Wallet. You will also receive the wallet information on this email ID.</string>
+    <string name="namedisclaimer">This service will change your registered name for the Wallet.</string>
+    <string name="mobiledisclaimer">This service will change your registered mobile number for the Wallet. You will also receive the OTP &amp; SMS on the new mobile number.</string>
+    <string name="pindisclaimer">This service will change your registered pin for the Wallet.</string>
+    <string name="dobdisclaimer">This service will change your registered date of birth for the Wallet.</string>
+    <string name="recenttransactions">كشف الحساب</string>
+    <string name="selectdaterange">Select a Date Range</string>
+    <string name="wallettxnid">Wallet Txn ID : </string>
+    <string name="otpdisclaimer">We sent you a one-time-pin (OTP) via SMS on your registered mobile number. Please enter the same above.</string>
+    <string name="otpheader"> An OTP is sent to your \n mobile number</string>
+    <string name="pininfo">Please follow bank muscat Wallet PIN Policy</string>
+    <string name="arabic">العربية</string>
+    <string name="welcomeheader">Welcome to bank muscat wallet</string>
+    <string name="loginheader">Login to your Account</string>
+    <string name="changemobile">Mobile Number Changed Successfully</string>
+    <string name="changemobiledisclaimer">You will now recieve your SMS notifications and  one-time-pin (OTP) in your new mobile number registered with us.</string>
+    <string name="changeemailtitle">Change Email</string>
+    <string name="changeemail">Email ID Change Successful</string>
+    <string name="changeemaildisclaimer">Now you will recieve all your e-mails notifications on the new e-mail id.</string>
+    <string name="changepin">Your Wallet pin is successfully changed.</string>
+    <string name="changepindisclaimer">Please do not share the wallet PIN with anyone for security reasons.</string>
+    <string name="pinrule">&#8226; PIN should not be a subset of the mobile number. E.g If the mobile number is 92512838 then Wallet PIN cannot be 92512, 25128, 12838 and so on. \n\n&#8226; PIN in reverse should not be a subset of the mobile number e.g. if the mobile number is 92512838 then Wallet PIN cannot be 83821, 21529 and so on.\n\n&#8226; PIN cannot be consecutive numbers. E.g 12345, 23456, 345678 and so on or in reverse such as 54321, 76543 and so on.\n\n&#8226; PIN should not contain a group of repeated digits.\n\n&#8226; PIN cannot contain only 2 different digits e.g. 34343; 56565.\n\n&#8226; PIN should not be same as date of birth or reverse of date of birth.\n\n&#8226; PIN should not be same as Last 3 PIN set for your wallet.\n\n</string>
+    <string name="niddisclaimer">Please enter your National Identification Number (NID) to be able to reset your wallet PIN.</string>
+    <string name="loadamoneydisclaimer">NOTE:Any bank customer can also load money in this wallet \n using the bank muscat Cash Deposit Machine</string>
+    <string name="allcardsaccepted">*All Oman Banks Debit Cards are accepted</string>
+    <string name="securitydiscalimer1">Please do not share the Secret Answer with anyone for security purpose</string>
+    <string name="securitydiscalimer2">Security Question will be used by bank muscat to authenticate you in the future</string>
+    <string name="menu_transactionhistory">Transaction History</string>
+    <string name="menu_pendingtransactions">Pending Transactions</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_referafriend">Refer a friend</string>
+    <string name="menu_downloadbankingapp">Download Mobile Banking App</string>
+    <string name="menu_downloadofferapp">Download Offer App</string>
+    <string name="menu_faq">FAQ</string>
+    <string name="menu_help">Help/Demo Screens</string>
+    <string name="menu_termsandconditions">Terms &amp; Conditions</string>
+    <string name="menu_logout">Logout</string>
+    <string name="userblockedmessage">You have been blocked. Please try after sometime or contact our call center</string>
+    <string name="deletepictureconfirm">Are you sure you want to remove your profile picture?</string>
+    <string name="groupconfirm">Do you want to save this group?</string>
+    <string name="enter_group_name">Enter Group Name</string>
+    <string name="deletecardconfirm">Are you sure you want to delete this card?</string>
+    <string name="selectlanguage">Select Your Preferred Language</string>
+    <string name="resendotpmessage">Something went wrong. Please click Resend OTP and try again.</string>
+    <string name="logoutmessage">Are you sure you want to logout?</string>
+    <string name="verifyemailsuccess"> We have sent verification email, please click on the link to verify</string>
+    <string name="dobinfo">Please click on the calendar button to select your date of birth</string>
+    <string name="invalidwpin">Invalid Wallet PIN</string>
+    <string name="invalidwamt">Invalid Amount</string>
+    <string name="invalidmoblen">Invalid Mobile number length</string>
+    <string name="invalidmobstr">Mobile Number should not start with 0 or 2</string>
+    <string name="invalidamt">Please enter a valid amount</string>
+    <string name="samepinerror">New Wallet PIN should not be same as existing Wallet PIN</string>
+    <string name="totalbalance">Total Balance</string>
+    <string name="usablebalance">Usable Balance</string>
+    <string name="requestmoneydisclaimer">You can review the status from Pending Transaction section </string>
+    <string name="failedtxncomment">Failed transactions do not affect the wallet balance.</string>
+    <string name="unrestereduseralert">The entered mobile number is not registered with us!!</string>
+    <string name="no_txns">No transactions available</string>
+    <string name="insuff_bal">Insufficient Balance to perform transaction</string>
+    <string name="own_mob">You entered your own mobile number</string>
+    <!--Button-->
+    <string name="cancel_button_text">Cancel</string>
+    <string name="content_description_back">Back</string>
+    <string name="next_button_text">Next</string>
+    <string name="confirm_button_text">Confirm</string>
+    <string name="ok_button_text">Ok</string>
+    <string name="transaction_date">Transaction Date</string>
+    <!-- Login-->
+
+    <string name="login_button_text">Login</string>
+    <string name="register_button_text">Register Now</string>
+    <string name="forgot_pin_button_text">Forgot Wallet PIN?</string>
+    <string name="enterwalletpin">Enter Wallet PIN</string>
+
+
+    <!-- Reg User-->
+
+    <string name="getdetailsfrom">Get details from</string>
+    <string name="regdisclaimer">Disclaimer: We will not post anything to Facebook \n or Google+ without your permission.</string>
+    <string name="or">OR</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="hintfullname">Full Name*</string>
+    <string name="hintnid">NID Number*</string>
+    <string name="hintmobile">Mobile Number*</string>
+    <string name="hintdob">Date of birth*</string>
+    <string name="hintemail">Email ID*</string>
+    <string name="hintemailoptional">Email ID {Optional)</string>
+    <string name="hintref">Referral code (Optional)</string>
+
+    <!-- Home -->
+
+    <string name="home_load_money">Load Money</string>
+    <string name="home_transfer_to_bank">Transfer To Bank</string>
+    <string name="home_send_money">Send Money</string>
+    <string name="home_request_money">Request Money</string>
+    <string name="home_pay_bill">Pay Bill</string>
+    <string name="home_qrscan_for_merchant_pay">QR Scan for\nMerchant Pay</string>
+    <string name="home_your_balance">Your Balance</string>
+    <string name="split_bill">Split Bill</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="favorite_transaction">Favorite Transaction</string>
+
+
+
+   <string name="unregistered"> mobile number is not a registered wallet user.
+    SMS will be sent to the recipient to download and register for this service.
+    Once the recipient successfully registers, the funds will be credited to the recipient.</string>
+    <string name="unregisteredsms">This number is not Registered on Wallet app
+    SMS will be sent to Download and Register</string>
+    <string name="unregisteredemail">This
+        E-mail is not Registered on Wallet app
+    E-mail will be sent to Download and Register</string>
+    <string name="youwillbenotified">Note: You will be notified once the transaction is complete</string>
+    <string name="wallet_balance">Wallet Balance</string>
+    <string name="collect_payment">Collect Payment</string>
+    <string name="move_to_bank">Transfer to bank</string>
+    <string name="menu_account_assist">My Account</string>
+    <string name="menu_change_pin">Change Pin</string>
+    <string name="menu_m2m">Merchant-2-Merchant</string>
+    <string name="menu_language">Language</string>
+    <string name="confirmation">CONFIRMATION</string>
+    <string name="forgot_pin_button_text2">Forgot PIN ?</string>
+    <string name="generate_qr">Generate QR Code</string>
+    <string name="show">Show</string>
+    <string name="invoice_number">Invoice Number</string>
+    <string name="create_qr">Create QR Code</string>
+    <string name="qr">QR Code</string>
+    <string name="scan_message">Scan the QR code to make the payment</string>
+    <string name="login">Login</string>
+    <string name="do_you">Do you wish to transfer</string>
+    <string name="merchant_details">Merchant Details</string>
+    <string name="merchant_code">Merchant Code</string>
+</resources>

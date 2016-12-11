@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@+id/amtdesc"
+        android:id="@+id/amount"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:text="#amount"/>
+
+    <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amount"
+        android:id="@+id/to"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:text="to"/>
+
+    <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:id="@+id/payee"
+        android:textSize="22sp"
+        android:text="#Payee"/>
+
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:text="@string/success"
+            android:id="@+id/robotoTextView3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ok"
+            android:id="@+id/imageView3"
+            android:layout_below="@+id/robotoTextView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp" />
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txnid"
+            android:gravity="center"
+            android:layout_marginTop="26dp"
+            android:textSize="12sp"
+            android:text="Transaction ID: 7631GGYGYGH"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txndate"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:text="Date: 26 July 2016  3:30 PM"
+            android:layout_below="@+id/txnid"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp" />
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/amtdesc"
+            android:layout_marginTop="22dp"
+            android:text="@string/amount"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+android:layout_centerVertical="true"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <LinearLayout
+        android:id="@+id/cardlyt"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/card_list_bg"
+        android:orientation="horizontal"
+
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/cardtop"
+
+
+        >
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:id="@+id/txtname"
+            android:layout_width="wrap_content"
+android:text="Name"
+
+          android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:background="@color/transparent" />
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:id="@+id/txtcard"
+            android:layout_width="wrap_content"
+            android:text="xxxxx"
+            android:layout_below="@+id/txtname"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:textSize="14sp"
+            android:background="@color/transparent" />
+
+        <ImageView
+            android:id="@+id/cardtype"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+
+            android:layout_centerVertical="true"
+            android:layout_margin="0dip"
+
+            android:padding="10dp"
+
+            android:layout_alignParentRight="true"
+             />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/removecard"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+       android:layout_weight=".75"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dp"
+        android:padding="12dp"
+        android:layout_toRightOf="@+id/cardlyt"
+        android:src="@drawable/delete_image_new" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red_header">#D3002B</color>
+    <!--<color name="red_header">#a1a1a1</color>-->
+    <color name="light_black">#565656</color>
+    <color name="app_color">#EF3E42</color>
+    <color name="app_bottombar_text_color">#585050</color>
+    <color name="app_bottombar_bg_color">#D2D2D2</color>
+    <!--<color name="app_color">#a1a1a1</color>-->
+    <!--<color name="riple_color">#ebebeb</color>-->
+    <color name="lightblue">#2fb4fa</color>
+    <color name="screen_light_grey">#f8f8f8</color>
+    <color name="light_grey">#40999999</color>
+    <color name="slide_menu_bg_color">#ccffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_light_grey">#d3d3d3</color>
+    <color name="list_grey">#F1F2F2</color>
+    <color name="grey">#bdbdbd</color>
+    <color name="AppthemeTextColor">#58595b</color>
+
+</resources>

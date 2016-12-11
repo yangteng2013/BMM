@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+        android:text="PROCEEDING"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="24sp"
+        android:id="@+id/title" />
+
+    <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+        android:text="Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/title"
+        android:id="@+id/title2" />
+
+
+    <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+        android:text="OMR 500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:layout_below="@+id/title2"
+        android:id="@+id/title3" />
+
+    <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/main"
+        android:text="Transfer to Ram CV"
+        android:layout_centerInParent="true"/>
+
+    <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fuel Charges"
+        android:id="@+id/reason"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/main"/>
+
+
+    <LinearLayout
+        android:id="@+id/otp_footer_rel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/footer_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoButton
+            android:id="@+id/mob_buttoncancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_change_selector"
+            android:text="@string/cancel_button_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <!--         <ImageView -->
+        <!--             android:id="@+id/imageView1" -->
+        <!--             android:layout_width="1dp" -->
+        <!--             android:layout_height="wrap_content" -->
+        <!--             android:contentDescription="@string/content_description_divider" -->
+        <!--             android:src="@drawable/divider" /> -->
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoButton
+            android:id="@+id/mob_buttonnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="0.1dp"
+            android:background="@drawable/button_change_selector"
+            android:text="@string/next_button_text"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:background="@color/transparent"
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+            android:id="@+id/txttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="7"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="Title"
+            android:inputType="none"
+            android:editable="false"
+            android:clickable="false"
+            android:longClickable="false"
+            android:textColor="@color/AppthemeTextColor"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoEditText
+            android:id="@+id/edtnumber"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="7"
+            android:background="@drawable/customborder"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            android:hint=""
+            android:maxLength="8"
+            android:textColor="@color/AppthemeTextColor"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/txtmessage"
+        android:background="@color/transparent"
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_horizontal"
+
+        android:padding="0dp">
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoButton
+            android:id="@+id/btnno"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_weight=".5"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_language"
+            android:text="CANCEL"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoButton
+            android:id="@+id/btnyes"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+android:layout_toRightOf="@+id/btnno"
+            android:layout_weight=".5"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_language"
+            android:text="OK"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

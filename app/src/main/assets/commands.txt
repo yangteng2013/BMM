@@ -1,0 +1,310 @@
+{ "commands" : [
+		{
+			"request" :"getCardListInput",
+			"getCardListInput": {
+				"uniqueId": "1234567890",
+			},
+			"requestHeader": {
+				"interactionCode": "GETCARDLIST",
+				"subTransactionCode": "PYMTINSTRU",
+				"serviceCode": "PYMTINSTRU",
+				"bearer": "MOBILE",
+				"phaseCode": "PYMTINSTRU",
+			}
+		},
+		{
+			"request" :"login",
+
+			"request-param": {
+				"user-id" : "foobar",
+				"user-pass" : "123456",
+				"social-login" : "",
+				"social-token" : "",
+				"social-date" : "",
+				"social-email" : ""
+			}
+
+		},
+		
+		
+	{
+		"request" :"add-offer",
+		"session-id": "ABCD",
+		"request-param": {
+        	"offer-title": "20% off on Pizza",
+        	"offer-detail": "Valid for Comviva Employees only so that they do night-outs!",
+			"start-date":	"2015-9-15",
+			"end-date": "2015-9-30",
+			"url": "www.google.com",
+			"offer-card" : "  card",
+			"offer-exclusive" : "exclusive",
+			"offer-type" : "informational",
+			"offer-paid" : "free",
+			"offer-online": "offline",
+			"offer-vertical": "3",
+			"offer-status": "0"
+		}
+		
+	},
+	
+	
+	{
+		"request" :"get-offer-feedback",
+		"session-id": "ABCD"
+		"request-param": {
+        	"offer-id" : "1"
+		}
+	
+	},
+	
+	
+	{
+		"request" :"approve-offer",
+		"session-id": "",
+		"request-param": {
+			"offer-id" : "1"
+		}
+	
+	},
+	
+	{
+		"request" :"change-password-other",
+		"session-id" : "",
+		"request-param": {
+        	"user-id" : "foobar",
+			"user-new-pass" : "123456"
+		}
+	
+	},
+	
+	
+	{
+		"request" :"change-password-self",
+		"session-id" : "",
+		"request-param": {
+        
+			"user-pass" : "123456",
+			"user-new-pass" : "654321"
+		}
+	
+	},
+	
+
+
+	{
+		"request" :"set-offer-feedback",
+		"session-id": "ABCD"
+		"request-param": {
+        	"offer-id" : "1",
+			"comment" : "this is a comment for a fantastic offer",
+			"rating" : "2"
+			"remarks" : "NA"
+			"issue"   : "1",
+			"date"    : "2015-11-04"
+		}
+	},
+	
+	{
+	"request" : "forgot-password",
+	"request-param" :{
+	
+			"user-id":"foo"
+			
+	}
+
+
+},
+
+{
+			"request" :"edit-user-self",
+			"session-id": "",
+			"request-param": {
+				"user-name": "foo",
+				"user-mobile" : "9945699084",
+				"user-email" : "foobar@comviva.com",
+			}
+		},
+		
+	{
+		"request" :"edit-user-other",
+		"session-id" : "",
+		"request-param": {
+        	"user-id" : "foobar",
+			"user-name": "foo",
+			"user-mobile" : "9945699084",
+			"user-email" : "foobar@comviva.com",
+		}
+	
+	},
+	
+	{
+		"request" :"get-user-detail-other",
+		"session-id": "ABCD",
+		"request-param": {
+			"user-id" : "foobar"
+		}
+	},
+
+	{
+		"request" :"get-user-detail-self",
+		"session-id": "ABCD",
+		"request-param": {
+
+		}
+	},
+	
+	{
+		"request" : "get-problem-list",
+		"session-id" : "",
+		"request-param": {
+
+		}
+		
+	},
+	
+	{
+	 	"request":"logout",
+	 	"session-id":"ABCD"
+	 	"request-param": {
+
+		}
+	 	
+	 },
+	 
+{
+			"request" :"set-offer-impression",
+			"session-id": "",
+			"request-param": {
+        		
+		}
+	},
+	{
+		"request" :"get-offer-impression",
+		"session-id": "",
+		"request-param": {
+			"offer-id" : "1"
+		}
+	},
+	
+	{
+		"request" :"generate-coupon",
+		"session-id": "",
+		"request-param": {
+    		"offer-id" : "1",
+    		"user-id" :	"1"
+		}
+	},
+	
+	{
+			"request" :"app-info-update",
+			"session-id": "",
+			"request-param": {
+				"token": "12345678",
+				"device-identifier": "IMEI",
+				"version": "2.0.1",
+				"platform" : "ANDROID"
+				
+			}
+	},	
+		
+		{
+		"request" :"get-offer-detail",
+		"session-id": "",
+		"request-param": {
+    		"offer-id" : "1"
+		}
+	},
+	
+	{
+		"request" : "validate-otp",
+		"request-param" : {
+			"user-id"   : "",
+			"user-pass" : "",
+			"otp"       : ""
+		
+		}
+	
+	},
+	{
+		"request" : "get-offer-list",
+		"session-id": "",
+		"request-param" : {
+			"lat"   : "",
+			"lng"   : "",
+			"city"  : ""
+		}
+	},
+	
+	{
+	"request" :"get-store-for-offer",
+	"request-param": {
+        "offer-id" : "694"
+		}
+	},
+	{
+		"request" : "get-city-list",
+		"session-id" : "",
+		"request-param" : {
+	
+		}
+	},
+
+	{
+		"request" :"get-comments-for-offer",
+		"session-id": "",
+		"request-param": {
+			"offer-id" : "1",
+		}
+	},
+	{
+	"request" 	: "get-all-business",
+	"session-id" 	: "",
+	"request-param" : {
+
+	}
+
+	},
+	{
+              "request" :"get-business-details",
+              "session-id": "",
+              "request-param": {
+                     "business-name" : "Themis",
+              }
+       },
+       {
+                     "request" :"add-store-self",
+                     "session-id": "",
+                     "request-param": {
+                           "address-line-1": "35 UAS Layout",
+                           "address-line-2": "Sanjaynagar Post",
+                           "area-name" : "Sanjaynagar",
+                           "area-pin" : "560094"
+                           "city-name": "Bangalore",
+                           "lat": "13.0450866",
+                           "lng" : "77.55671910000001",
+                           "store-name" : "STORE_AiMSDOO"
+                           
+                           
+                     }
+              },
+              {
+                     "request" :"add-store-other",
+                     "session-id": "",
+                     "request-param": {
+                           "user-id" : "girishdesais"
+                           "address-line-1": "35 UAS Layout",
+                           "address-line-2": "Sanjaynagar Post",
+                           "area-name" : "Sanjaynagar",
+                           "area-pin" : "560094"
+                           "city-name": "Bangalore",
+                           "lat": "13.0450866",
+                           "lng" : "77.55671910000001",
+                           "store-name" : "STORE_AiMSDOO"
+                           
+                           
+                     }
+              }      
+ 	
+		
+	]
+}

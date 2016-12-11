@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "338083748596",
+    "firebase_url": "https://bankmuscat-148313.firebaseio.com",
+    "project_id": "bankmuscat-148313",
+    "storage_bucket": "bankmuscat-148313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338083748596:android:7e3bd3244cdf47fb",
+        "android_client_info": {
+          "package_name": "app.banking.bankmuscat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338083748596-eh842i1glcmg1fbjdmgk00tr91ffjqih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.banking.bankmuscat",
+            "certificate_hash": "891A0184BC057A68D31E5965ECDC5A24948ED1E7"
+          }
+        },
+        {
+          "client_id": "338083748596-7ghc1l5r24eg3l0v1f3qj0itasnoul2n.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "338083748596-9mqe09ofgro374qr0gpnt55nej85mako.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeWiNKwO0pPE_8QGZA89TWRAHEWTH-XZQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338083748596-7ghc1l5r24eg3l0v1f3qj0itasnoul2n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

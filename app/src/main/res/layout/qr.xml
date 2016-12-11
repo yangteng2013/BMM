@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="3dp"
+        android:textSize="18sp"
+        android:text="@string/qr"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:gravity="top"/>
+
+    <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="3dp"
+        android:textSize="10sp"
+        android:text="@string/amount"
+        android:layout_gravity="center"
+        android:gravity="top"/>
+
+    <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:layout_marginTop="0dp"
+        android:padding="3dp"
+        android:textSize="24sp"
+        android:text="Amount"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <ImageView android:id="@+id/imageView1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:text="@string/qr"
+            android:gravity="center"/>
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="3dp"
+            android:id="@+id/txnid"
+            android:background="@drawable/customborder"
+            android:text="1322HGVHBHV7688"
+            android:gravity="center"/>
+
+        <app.banking.bankmuscat.merchant.components.widgets.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/scan_message"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
